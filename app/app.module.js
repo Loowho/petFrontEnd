@@ -11,16 +11,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
-var app_location_1 = require('./app.location');
+var app_component_1 = require('./app.component');
+var http_1 = require('@angular/common/http'); //import http client. Used to get data from app.
 // This decorator describes the class that follows it
 var AppModule = (function () {
     function AppModule() {
     }
     AppModule = __decorate([
+        //import http client. Used to get data from app.
         core_1.NgModule({
-            imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
-            declarations: [app_location_1.AppLocation],
-            bootstrap: [app_location_1.AppLocation] // Where do I start?
+            imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, http_1.HttpClientModule],
+            declarations: [app_component_1.AppComponent],
+            bootstrap: [app_component_1.AppComponent] // Where do I start?
         }), 
         __metadata('design:paramtypes', [])
     ], AppModule);
