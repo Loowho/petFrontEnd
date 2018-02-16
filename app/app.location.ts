@@ -54,8 +54,8 @@ import { Component } from '@angular/core';
 <!--      </label> --> 
 <!--    </fieldset> -->
 
-<button (click)="locationClick()">Add Location</button>
-<!-- <button type="submit" class="btn" ng-click="save()" ng-disabled="myForm.$invalid">Add Location</button> -->
+<!-- <button (click)="locationClick()">Add Location</button> -->
+<button type="submit" class="btn" ng-click="save()" ng-disabled="myForm.$invalid">Add Location</button>
   </div>
   `,
 })
